@@ -1,0 +1,48 @@
+import java.io.*;
+import java .util.*;
+import java.util.LinkedList;
+
+class test {
+    public static void main(String[] args) {
+        Queue q=new PriorityQueue();  //one end
+        q.add("harsha");
+        q.add("kumar");
+        q.add("veelu");
+
+        System.out.println(q);
+
+        Queue qq=new ArrayDeque(); //both ends
+        qq.add("harsha");
+        qq.add("kumar");
+        qq.add("veelu");
+
+        System.out.println(qq);
+
+        Iterator itr=qq.iterator();
+        while (itr.hasNext()){
+            String s=(String)itr.next();
+            System.out.println(s);
+        }
+
+        Iterator itrs=q.iterator();
+        while (itrs.hasNext()){
+            String ss=(String)itrs.next();
+            System.out.println(ss);
+        }
+
+
+
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

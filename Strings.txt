@@ -1,0 +1,55 @@
+import java.util.Locale;
+
+class test{
+    public static void main(String[] args){
+        StringBuffer sb=new StringBuffer("harshabuffer");
+        StringBuilder sbb=new StringBuilder("harshabuilder");
+        char [] ch={'a','e','i','o','u'};
+        String s=new String();
+        String s1=new String("strings1");
+        String s2=new String(sb);
+        String s3=new String(sbb);
+        String s4=new String(ch);
+        System.out.println(s3);
+        
+        
+        char c=s1.charAt(4);
+        s1.concat(s2);
+        boolean b=s1.equals(s2);
+        boolean b2=s1.equalsIgnoreCase(s2);
+        boolean b3=s1.isEmpty();
+        int l=s1.length();
+        s3.replace('a','b');
+        s3.substring(3);
+        s3.substring(1,5);
+        int in=s3.indexOf('a');
+        int inl=s3.lastIndexOf('a');
+        s3.toLowerCase(Locale.ROOT);
+        s3.toUpperCase();
+        
+        
+        
+        String sss="harshakumar";
+        StringBuffer sbbb=new StringBuffer();
+        StringBuffer sbbb1=new StringBuffer(1000);
+        StringBuffer sbbb2=new StringBuffer(sss);
+        
+        
+        int len=sbbb.length();
+        int ccc=sbbb.capacity();
+        char cc=sbbb.charAt(3);
+        sbbb.setCharAt(2,'d');
+        sbbb.append("hghhh");
+        sbbb.append(123);
+        sbbb.delete(1,3);
+        sbbb.deleteCharAt(4);
+        sbbb.reverse();
+        sbbb.setLength((8));
+        sbbb.ensureCapacity(400);
+        sbbb.trimToSize();
+       
+
+    }
+}
+
+

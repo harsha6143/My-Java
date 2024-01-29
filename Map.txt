@@ -1,0 +1,54 @@
+import java.io.*;
+import java .util.*;
+import java.util.LinkedList;
+
+class test {
+    public static void main(String[] args) {
+        Map m1=new HashMap();
+        m1.put(1,"harsha");
+        m1.put(2,"veelu");
+        m1.put(3,"kumar");
+        System.out.println(m1.size());
+        System.out.println(m1.get(1));
+        for(int i=0;i<m1.size();i++){
+            if (m1.get(i)=="harsha"){
+                System.out.println(i);
+            }
+        }
+
+        Map m2=new LinkedHashMap();
+        m2.put(1,"how");
+        m2.put(2,"are");
+        m2.put(3,"you");
+
+        System.out.println(m2.size());
+        System.out.println(m2.get(1));
+        for(int i=0;i<m2.size();i++){
+            if (m1.get(i)=="harsha"){
+                System.out.println(i);
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

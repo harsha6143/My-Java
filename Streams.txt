@@ -1,0 +1,33 @@
+import java.io.*;
+import java .util.*;
+import java.util.LinkedList;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+
+class test {
+    public static void main(String[] args) {
+        ArrayList<Integer>arr=new ArrayList<Integer>();
+        arr.add(10);
+        arr.add(15);
+        arr.add(20);
+        arr.add(25);
+        arr.add(30);
+        arr.add(32);
+        arr.add(40);
+        System.out.println(arr);
+        List<Integer>lst=arr.stream().filter(i->i%2==0).collect(Collectors.toList());
+        System.out.println(lst);
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

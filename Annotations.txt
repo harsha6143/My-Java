@@ -1,0 +1,116 @@
+@Override annotation:
+
+class eat{
+    public void eatmethod(){
+        System.out.println("eating");
+    }
+}
+
+class eat1 extends eat{
+    @Override
+    public void eatmethod(){
+        System.out.println("eating lunch");
+    }
+}
+
+class test {
+    public static void main(String[] args){
+        eat1 a=new eat1();
+        a.eatmethod();
+
+    }
+}
+
+
+@SupressWarnings:
+
+1. @SuppressWarnings("unchecked")
+   public class Calculator {
+          }
+          
+- Here, it will ignore all unchecked warnings coming from that class. (All methods, variables, constructors).
+
+2. public class Calculator {
+   @SuppressWarnings("unchecked")
+      public int sum(x,y) {
+        .
+      }
+   }
+   
+- It will stop warning from that function only, and not from other functions of Calculator class.
+
+All	        It will suppress all warnings.
+Cast         	Suppress the warning while casting from a generic type to a nonqualified type or the other way around.
+Deprecation   	Ignores when we’re using a deprecated(no longer important) method or type.
+divzero	        Suppresses division by zero warning.
+empty	        Ignores warning of a statement with an empty body.
+unchecked	It doesn’t check if the data type is Object or primitive.
+fallthrough	Ignores fall-through on switch statements usually (if “break” is missing).
+hiding	        It suppresses warnings relative to locals that hide variable
+serial	        It makes the compiler shut up about a missing serialVersionUID.
+finally	        Avoids warnings relative to finally block that doesn’t return.
+unused	        To suppress warnings relative to unused code.
+
+
+@Deprecated
+
+In Java, the @Deprecated annotation is used to indicate that a particular class, method, field, or constructor has been deprecated, meaning that it should no longer be used in future code.
+
+
+Built in java annotations used in other annotations:
+
+@Target:
+
+The @Target annotation specifies the types of program elements to which a custom annotation can be applied. It takes an array of ElementType values as its value.
+
+import java.lang.annotation.*;
+
+@Target({ElementType.TYPE, ElementType.METHOD})
+public @interface MyAnnotation {
+    // Annotation elements
+}
+
+In this example, MyAnnotation can be applied to both classes (ElementType.TYPE) and methods (ElementType.METHOD).
+
+@Retention:
+
+The @Retention annotation specifies how long the annotated annotation should be retained. It takes a RetentionPolicy value as its value.
+
+import java.lang.annotation.*;
+
+@Retention(RetentionPolicy.RUNTIME)
+public @interface MyAnnotation {
+    // Annotation elements
+}
+
+In this example, MyAnnotation is retained at runtime, allowing it to be accessed and processed using reflection
+
+@Inherited:
+
+The @Inherited annotation indicates that an annotation type is automatically inherited by subclasses of the annotated class. It is not applicable to fields or methods.
+
+import java.lang.annotation.*;
+
+@Inherited
+@Retention(RetentionPolicy.RUNTIME)
+public @interface MyAnnotation {
+    // Annotation elements
+}
+
+In this example, if a class is annotated with MyAnnotation, its subclasses will also inherit the annotation.
+
+@Documented:
+
+The @Documented annotation indicates that the annotated annotation should be included in the generated Javadoc documentation.
+
+import java.lang.annotation.*;
+
+@Documented
+@Retention(RetentionPolicy.RUNTIME)
+public @interface MyAnnotation {
+    // Annotation elements
+}
+
+In this example, if the Javadoc tool is used to generate documentation for classes or methods annotated with MyAnnotation, the annotation itself will be included in the documentation.
+
+

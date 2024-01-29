@@ -1,0 +1,29 @@
+class p
+{
+    public void property(){
+        System.out.println("property");
+    }
+    public void marry(){
+        System.out.println("arranged marry");
+    }
+}
+
+class c extends p{
+    public void marry(){
+        System.out.println("love marry");
+    }
+
+}
+class test
+{
+    public static void main(String[] args){
+        p p=new p();
+        p.marry();
+        c c=new c();
+        c.marry();
+        p p1=new c();
+        p1.marry();
+
+
+    }
+}

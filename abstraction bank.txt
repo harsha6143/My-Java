@@ -1,0 +1,29 @@
+abstract class bankaccount{
+    public abstract int getbalance();
+    public abstract int getaccno();
+    public abstract int getuserid();
+}
+
+class user1 extends bankaccount{
+    public int getbalance(){
+        return 60000;
+    }
+    public int getaccno() {
+        return 123456789;
+    }
+    public int getuserid(){
+
+        return 1891;
+    }
+}
+
+class test
+{
+    public static void main(String[] args){
+        user1 u1=new user1();
+        System.out.println(u1.getaccno());
+        System.out.println(u1.getbalance());
+        System.out.println(u1.getuserid());
+
+    }
+}

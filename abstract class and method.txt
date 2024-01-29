@@ -1,0 +1,32 @@
+abstract class vehicle{
+    public abstract int getnooftires();
+}
+
+class bus extends vehicle{
+    public int getnooftires(){
+        return 6;
+    }
+}
+class auto extends vehicle{
+    public int getnooftires(){
+        return 3;
+    }
+}
+class bike extends vehicle{
+    public int getnooftires(){
+        return 2;
+    }
+}
+
+class test
+{
+    public static void main(String[] args){
+        bus b=new bus();
+        System.out.println(b.getnooftires());
+        bike k=new bike();
+        System.out.println(k.getnooftires());
+        auto a=new auto();
+        System.out.println(a.getnooftires());
+
+    }
+}

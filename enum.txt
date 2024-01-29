@@ -1,0 +1,16 @@
+in java, an enum(enumeration) is a special data type that represents a fixed set of constants.you can define enum using enum keyword
+
+enum color{
+    RED,Blue,Green
+}
+class test{
+    public static void main(String[] args){
+        color mycolor=color.Green;
+        switch (mycolor){
+            case RED -> System.out.println("its red");
+            case Blue -> System.out.println("its blue");
+            case Green -> System.out.println("its Green");
+            default -> System.out.println("unnown colour");
+        }
+    }
+}

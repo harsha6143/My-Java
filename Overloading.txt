@@ -1,0 +1,20 @@
+class adder{
+    public int add(int a,int b){
+        return a+b;
+    }
+    public int add(int a, int b, int c){
+        return a+b+c;
+
+    }
+}
+
+class test
+{
+    public static void main(String[] args){
+        adder l=new adder();
+        System.out.println(l.add(1,2));
+        System.out.println(l.add(1,2,3));
+
+    }
+}
+

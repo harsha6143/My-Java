@@ -1,0 +1,21 @@
+class p{
+    public void m1(){
+        System.out.println("parent class");
+    }
+}
+class c{
+    public void m2(){
+        System.out.println("child class");
+    }
+}
+
+class test
+{
+    public static void main(String[] args){
+        p pc=new p();
+        pc.m1();
+        c cc=new c();
+        cc.m2();
+
+    }
+}

@@ -1,0 +1,48 @@
+class account {
+    private double balance;
+
+    public double getbalance() {
+        return balance;
+    }
+
+    public double setbalance(double amount) {
+        this.balance = this.balance + amount;
+        return balance;
+    }
+
+}
+
+class test
+{
+    public static void main(String[] args){
+        account a=new account();
+        System.out.println(a.getbalance());
+        System.out.println(a.setbalance(1000));
+
+    }
+}
+
+------------------------------------------------------------------------------------------------------------------
+
+class bgmi{
+    private double uc;
+    public double getUc(){
+        return 0;
+    }
+    public double setuc(double amount){
+        this.uc=this.uc+amount;
+        return this.uc;
+    }
+}
+
+class test
+{
+    public static void main(String[] args){
+        bgmi b=new bgmi();
+        System.out.println(b.getUc());
+        System.out.println(b.setuc(90));
+
+
+    }
+}
+

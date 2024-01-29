@@ -1,0 +1,23 @@
+interface interf{
+    public void m1();
+    public void m2();
+}
+
+class demo implements interf{
+    public void m1(){
+        System.out.println("m1");
+    }
+    public void m2(){
+        System.out.println("m2");
+    }
+
+}
+
+class test
+{
+    public static void main(String[] args){
+        demo d=new demo();
+        d.m1();
+        d.m2();
+    }
+}

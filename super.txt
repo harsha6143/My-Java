@@ -1,0 +1,34 @@
+#super in methods
+
+class parent{
+    public void getname(){
+        System.out.println("parent");
+    }
+}
+class child extends parent{
+    public void getname(){
+        System.out.println("child");
+    }
+    public void gettop(){
+        getname();
+        super.getname();
+    }
+}
+
+class test{
+    public static void main(String[] args) {
+        parent p=new parent();
+        p.getname();
+        child c=new child();
+        c.getname();
+        c.gettop();
+    }
+
+
+}
+
+#super in constructor
+
+
+
+

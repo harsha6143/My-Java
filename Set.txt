@@ -1,0 +1,84 @@
+import java.io.*;
+import java .util.*;
+import java.util.LinkedList;
+
+class test {
+    public static void main(String[] args) {
+        Set<String> s=new HashSet();
+        s.add("harsha");
+        s.add("kumar");
+        s.add("bunny");
+        s.add("inbook");
+        System.out.println(s);
+
+        Iterator<String> itr=s.iterator();
+        while(itr.hasNext()){
+            String a=(String)itr.next();
+            System.out.println(a);
+        }
+
+        Set<String> ss=new LinkedHashSet();
+        ss.add("areyouok");
+        ss.add("iamgood");
+        ss.add("help");
+
+        Iterator itr2=ss.iterator();
+        while(itr2.hasNext()){
+            String b=(String)itr2.next();
+            System.out.println(b);
+        }
+
+        Set<String> ts=new TreeSet<>();
+        ts.add("qwe");
+        ts.add("efihefb");
+        ts.add("efoejfi");
+
+        Iterator itr3=ts.iterator();
+        while(itr3.hasNext()){
+            String sss=(String)itr3.next();
+            System.out.println(sss);
+
+        }
+
+        NavigableSet av=new TreeSet();
+        av.add(1);
+        av.add(2);
+        av.add(3);
+        av.add(4);
+        av.add(5);
+        av.add(6);
+        av.add(7);
+        NavigableSet<Integer>reverse=av.descendingSet();
+        System.out.println(reverse);
+
+        System.out.println(av.lower(3)); //largest element smaler than 3
+        System.out.println(av.floor(3)); //gratest element lessthan or equal to 3
+        System.out.println(av.higher(3)); // next grster than 3
+        System.out.println(av.ceiling(3));//leat element grater than or equal to 3
+        System.out.println(av.pollFirst());//first element
+        System.out.println(av.pollLast());//last element
+
+
+        SortedSet sst=new TreeSet();
+
+        sst.add("zero");
+        sst.add("xox");
+        sst.add("apple");
+        sst.add("bat");
+
+        System.out.println(sst);
+
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

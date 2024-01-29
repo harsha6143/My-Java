@@ -1,0 +1,56 @@
+import java.io.*;
+import java .util.*;
+import java.util.LinkedList;
+
+class test{
+    public static void main(String[] args){
+        List l=new ArrayList();
+        l.add("harsha");
+        l.add("kumar");
+        l.add("veelu");
+        System.out.println(l);
+        Iterator itr=l.iterator();
+        while(itr.hasNext()){
+             String a=(String)itr.next();
+            System.out.println(a);
+        }
+
+
+        List<String> ll=new LinkedList<String>();
+        ll.add("how");
+        ll.add("are");
+        ll.add("you");
+        System.out.println(ll);
+        Iterator itr1=ll.iterator();
+        while(itr1.hasNext()){
+            String s1=(String)itr1.next();
+            System.out.println(s1);
+        }
+
+        List<String> v=new Vector<String>();
+        v.add("i");
+        v.add("am");
+        v.add("fine");
+        System.out.println(v);
+        Iterator itr2=v.iterator();
+        while(itr2.hasNext()){
+            String s2=(String)itr2.next();
+            System.out.println(s2);
+
+        }
+
+        List<String> ss=new Stack<String>();
+        ss.add("this");
+        ss.add("is");
+        ss.add("harsha");
+
+        Iterator itr3=ss.iterator();
+        while(itr3.hasNext()){
+            String s3=(String)itr3.next();
+            System.out.println(s3);
+
+        }
+    }
+}
+
+

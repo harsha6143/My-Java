@@ -1,0 +1,69 @@
+# Throw and Throws
+
+class exp{
+    public void checkage(int age) throws ArithmeticException{
+        if (age<18){
+            throw new ArithmeticException("access deniled");
+        }
+        else{
+            System.out.println("access grantes");
+        }
+    }
+
+}
+class test{
+    public static void main(String[] args){
+        exp e=new exp();
+        e.checkage(20);
+
+    }
+}
+
+# try-catch
+
+class exp{
+    public void checkage(){
+        try{
+            int i=100/0;
+        }catch (ArithmeticException exp){
+            System.out.println(exp);
+        }
+        finally {
+            System.out.println("final");
+        }
+    }
+}
+class test{
+    public static void main(String[] args){
+        exp e=new exp();
+        e.checkage();
+    }
+}
+
+
+
+class exp{
+    public void checkage(){
+        int[] arr=new int[5];
+        try{
+            int i=arr[10];
+        }catch (NullPointerException exp){
+            System.out.println(exp);
+        }
+        finally {
+            System.out.println("final");
+        }
+    }
+}
+class test{
+    public static void main(String[] args){
+        exp e=new exp();
+        e.checkage();
+    }
+}
+
+
+
+
+
+
