@@ -1,3 +1,4 @@
+wraper class used to wrap prinitive data types such as int,char etc into objects
 Autoboxing:
 
 The automatic conversion of primitive data type into its corresponding wrapper class is known as autoboxing, for example, byte to Byte, char to Character, int to Integer, long to Long, float to Float, boolean to Boolean, double to Double, and short to Short.
