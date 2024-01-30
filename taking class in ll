@@ -1,0 +1,35 @@
+class person{
+    String name;
+    double age;
+    double height;
+    double weight;
+
+    public person(String name,double age,double height,double weight){
+        this.name=name;
+        this.age=age;
+        this.height=height;
+        this.weight=weight;
+    }
+}
+
+
+class test
+{
+    public static void main(String[] args){
+        person harsha=new person("harsha",22,182,65);
+        LinkedList<person>p1=new LinkedList<person>();
+        p1.add(harsha);
+
+        person suresh=new person("suresh",39,150,70);
+        p1.add(suresh);
+
+        person ranesh=new person("ramesh",33,160,70);
+        p1.add(ranesh);
+
+        System.out.println(p1.get(0).age);
+        System.out.println(p1.get(1).age);
+        System.out.println(p1.get(2).name);
+        
+    }
+}
+
