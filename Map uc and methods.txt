@@ -1,0 +1,41 @@
+hash map(key,Value)  uc : used in phone book by using key-value pair of name-number
+
+hm.put(1,"hyd");     added to hashmap with key=1 and value=hyd
+hm.get(1);           retrive element with key value ==1
+hm.remove(1);        value at key==1 is removed
+hm.clear();          remove all elements
+hm.size();           give size of hashmap
+
+// Print keys
+
+        for (Object i : hm.keySet()) {
+            System.out.println(i);
+        }
+
+//Print values
+
+        for (Object i : hm.values()){
+            System.out.println(i);
+        }
+
+//Print values and keys
+
+        for (Object i: hm.keySet()){
+            System.out.println(i + " "+hm.get(i));
+        }
+
+
+weak hashmap :
+
+The object of a weak reference type can be garbage collected in Java if the reference is no longer used in the program.
+
+identity hashmap :
+
+it uses reference equality rather than object equality while comparing the keys/values
+
+Hash table :
+
+It  is a Data structure that stores key or value pairs and is an array of buckets
+
+
+
