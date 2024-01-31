@@ -1,0 +1,58 @@
+ArrayList methods       uc : elements are frequently accessed and the size of the list may change      
+
+al.add('a');            add element
+al2.addAll(a1);         add elements from existing arraylist
+al.get(0);              get element at 0 index
+al.set(0,'b');          set element at 0 index
+al.remove(0);           remove element at 0 index
+al.clear();             remove all elements
+al.size();              size of the list
+Collections.sort(al)    sorting
+
+LinkedList methods      uc : elemets are frequently added or removed from begining or middle of the list
+
+ll.addFirst('a');       add element at first
+ll.addLast('a');        add element at last
+ll.removeFirst('a');    remove first element
+ll.removeLast('a');     remove last element
+ll.getFirst('a');       get first element
+ll.getLast('a');        get last element
+
+Stack methods(LIFO)     uc : provide undo mechanism,synchronized
+
+s.push(1);              put element in stack
+s.pop();                pop last element
+s.peek();               element which is in top
+
+HashSet methods         uc : no duplicates,accending order,can add null, searching is most frequent then go with hashset
+
+hs.contains('a');       true if it contain element
+
+LinkedHashSet           uc : if we want order, no duplicate 
+
+TreeSet methods  
+
+ts.first();             give first element
+ts.last();              give last element
+ts.headSet(5);          give only smaller elements than 5
+ts.tailSet(5);          give higher elements and also 5
+ts.subSet(2,8);         give elements which are in the range of 2 and 8
+ts.lower(3);            give strictly less element           
+ts.floor(3);            give graterst element less or equal to the given element or null in there are no such elements
+ts.higher(3);           give strictly grater element
+ts.pollFirst();         retrieves and removes the first(lowest) element or return null if empty
+ts.poolLast();          retrieves and removes the last(highest) element or return null if empty
+ts.decendingSet();      give decending order of elements
+       
+Queue(FIFO)             uc : prior to process
+
+priority queue -> arrange elements based on priority
+
+A priority queue is a type of queue that arranges elements based on their priority values. Elements with higher priority values are typically retrieved before elements with lower priority values.
+
+-ascending priority queue
+-decending priority queue
+
+
+
+
