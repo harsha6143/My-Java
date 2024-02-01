@@ -1,0 +1,13 @@
+class test {
+    public static void main(String[] args){
+        LinkedList ls=new LinkedList();
+        ls.add("harsha");
+        ls.add("kumar");
+        ls.add("arjun");
+        ls.add("suresh");
+        ls.add("ramesh");
+        ls.add("balu");
+        ls.forEach((n)->System.out.println(n));
+
+    }
+}
