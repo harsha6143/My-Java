@@ -1,0 +1,25 @@
+interface sayable{
+    default void say(){           //default method
+        System.out.println("from default method");
+    }
+    void say1(String s);         //abstract method
+
+    static void say2(String s){  //static method
+        System.out.println(s);
+    }
+}
+
+class def implements sayable{
+    public void say1(String s){
+        System.out.println(s);
+    }
+}
+
+class test {
+    public static void main(String[] args){
+        def d=new def();
+        d.say();
+        d.say1("from abstract method");
+        sayable.say2("from static method");
+    }
+}
