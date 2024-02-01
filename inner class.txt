@@ -1,0 +1,29 @@
+class bgmi{
+    public void m1(){
+        System.out.println("outer class");
+
+    }
+    class erangle{
+        public void m2(){
+            System.out.println("inner class");
+
+        }
+        class vikendi{
+            public void m3(){
+                System.out.println("inner inner class");
+            }
+        }
+    }
+}
+
+
+class test {
+    public static void main(String[] args){
+        bgmi p1=new bgmi();
+        p1.m1();
+        bgmi.erangle p2=p1.new erangle();
+        p2.m2();
+        bgmi.erangle.vikendi p3=p2.new vikendi();
+        p3.m3();
+    }
+}
