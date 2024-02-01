@@ -1,3 +1,7 @@
+
+In Java, a functional interface is an interface that contains only one abstract method. Functional interfaces are a key concept in Java's support for functional programming and the use of lambda expressions. The @FunctionalInterface annotation is optional but can be used to ensure that the interface meets the criteria of a functional interface.
+
+
 without functional interface
 
 class test {
