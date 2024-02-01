@@ -1,3 +1,31 @@
+Abstract Method:
+
+An abstract method in an interface is a method without a body. It declares the method signature, but it doesn't provide the implementation.
+
+Any class implementing the interface must provide a concrete implementation for all the abstract methods defined in the interface.
+
+
+
+Default Method:
+
+A default method in an interface is a method that has a default implementation provided within the interface itself.
+
+Default methods allow you to add new methods to an interface without breaking existing implementations of that interface.
+
+Classes implementing the interface can choose to override the default method if they want a different implementation.
+
+
+
+Static Method:
+
+A static method in an interface is a method that is associated with the interface and not with any instance of a class.
+
+Static methods can be called using the interface name, and they cannot be overridden by implementing classes.
+
+Static methods are often used for utility functions or methods that don't depend on the state of an instance
+
+
+
 interface sayable{
     default void say(){           //default method
         System.out.println("from default method");
