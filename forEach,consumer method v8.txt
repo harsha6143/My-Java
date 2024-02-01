@@ -1,3 +1,6 @@
+In Java, the forEach method is part of the Iterable interface and is commonly used in conjunction with the Consumer interface to iterate over elements of a collection and perform an action on each element. Let's discuss both interfaces:
+
+
 class test {
     public static void main(String[] args){
         LinkedList ls=new LinkedList();
