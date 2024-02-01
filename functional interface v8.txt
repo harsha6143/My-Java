@@ -36,3 +36,18 @@ class test {
     }
 }
 
+
+multiplication using functional interface
+
+interface mux{
+    int multiply(int a,int b);
+}
+class test {
+    public static void main(String[] args){
+        int a=100;
+        int b=299;
+        mux ad=(x,y)->x*y;
+        int result= ad.multiply(a,b);
+        System.out.println(result);
+    }
+}
