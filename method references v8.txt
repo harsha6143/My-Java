@@ -1,0 +1,69 @@
+Java provides a new feature called method reference in Java 8. Method reference is used to refer method of functional interface. It is compact and easy form of lambda expression. Each time when you are using lambda expression to just referring a method, you can replace your lambda expression with method reference.
+
+there are three types:
+
+-Reference to a static method.
+-Reference to an instance method.
+-Reference to a constructor.
+
+Reference to a ststic method :
+
+interface inter{
+    void say();
+}
+
+class refer{
+    public static void saysomething(){
+        System.out.println("harsha");
+    }
+}
+
+class test {
+    public static void main(String[] args){
+        
+        inter it= refer::saysomething;
+        it.say();
+    }
+}
+
+
+
+
+Reference to an instance method :
+
+interface inter1{
+    void ask();
+}
+class c1{
+    public void askph(){
+        System.out.println("enter phone number");
+    }
+}
+class test {
+    public static void main(String[] args){
+        inter1 asking=new c1()::askph;
+        asking.ask();
+    }
+}
+
+
+
+
+Reference to a constructor :
+
+
+interface inter{
+    c1 getMsg(String msg);
+}
+class c1{
+    c1(String msg){
+        System.out.print(msg);
+    }
+}
+class test {
+    public static void main(String[] args){
+        inter msge=c1::new;
+        msge.getMsg("Hello");
+    }
+}
+
