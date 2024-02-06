@@ -55,4 +55,47 @@ A priority queue is a type of queue that arranges elements based on their priori
 
 
 
+Here's a comparison of ArrayList, LinkedList, Vector, and Stack in Java:
 
+1. *ArrayList*: 
+   - Implements the List interface backed by an array.
+   - Offers fast random access and iteration.
+   - Slower insertion and deletion operations compared to LinkedList.
+   - Not synchronized, so not thread-safe by default.
+
+2. *LinkedList*:
+   - Implements the List and Deque interfaces using a doubly linked list.
+   - Efficient for insertion and deletion operations, especially in the middle of the list.
+   - Slower random access compared to ArrayList.
+   - Not synchronized.
+
+3. *Vector*:
+   - Similar to ArrayList but synchronized, making it thread-safe.
+   - Slower performance compared to ArrayList due to synchronization.
+   - Less commonly used due to the overhead of synchronization.
+
+4. *Stack*:
+   - Extends Vector and implements the stack data structure.
+   - Supports push and pop operations, with the top element being the last one added.
+   - Largely superseded by the use of Deque implementations like ArrayDeque, which offer better performance and more 
+     flexibility.
+
+In summary:
+- Choose ArrayList for fast random access and iteration when thread safety is not a concern.
+- Choose LinkedList for efficient insertion and deletion, especially in the middle of the list.
+- Use Vector only when thread safety is required, but be aware of the performance overhead.
+- Consider using Deque implementations like ArrayDeque instead of Stack for stack operations due to better performance.
+
+
+
+
+A HashSet is a collection in Java that uses hashing to store elements, providing constant-time performance for basic operations like add, remove, and contains.
+
+A "LinkedIn hashset" isn't a standard term in Java. It might refer to a HashSet implementation specific to LinkedIn's engineering practices or frameworks.
+
+A TreeSet is another collection in Java that stores elements in a sorted order defined either by natural ordering or by a comparator. It offers log(n) time complexity for basic operations but requires elements to be comparable.
+
+In summary:
+- Use HashSet when you need fast insertion, deletion, and membership testing, but don't need any specific order.
+- Use TreeSet when you need elements to be sorted either naturally or by a custom comparator.
+- A "LinkedIn hashset" would require more context to understand its specific characteristics and use cases.
