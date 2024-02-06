@@ -18,6 +18,7 @@ class test {
         arr.add(30);
         arr.add(32);
         arr.add(40);
+        arr.forEach(i->System.out.println(i));
         System.out.println(arr);
         List<Integer>lst=arr.stream().filter(i->i%2==0).collect(Collectors.toList());
         System.out.println(lst);
