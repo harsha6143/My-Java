@@ -37,3 +37,54 @@ public class Main {
         op.iterate(stringHashSet);
         }
 }
+
+
+now using interface
+
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.*;
+
+interface operator<t>{
+    public void addelement(Collection<t> lst, t a);
+    public void addelementsatonce(Collection<t>lst,t... a);
+    public void iterate(Collection<t>lst);
+
+}
+class operation<t> implements operator<t>{
+    public void addelement(Collection<t> lst, t a){
+        lst.add(a);
+    }
+    public void addelementsatonce(Collection<t>lst,t... a){
+        for(int i=0;i<a.length;i++){
+            lst.add(a[i]);
+        }
+    }
+    public void iterate(Collection<t>lst){
+        Iterator itr=lst.iterator();
+        while(itr.hasNext()){
+            t b=(t)itr.next();
+            System.out.println(b);
+        }
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        LinkedList <Integer>integerlinkedlist=null;
+        integerlinkedlist=new LinkedList<Integer>();
+        operation op=new operation();
+        op.addelementsatonce(integerlinkedlist,200,300,500,8000);
+        op.iterate(integerlinkedlist);
+
+        LinkedList<String>stringLinkedList=null;
+        stringLinkedList=new LinkedList<String>();
+        op.addelementsatonce(stringLinkedList,"hello","how","are","you");
+        op.iterate(stringLinkedList);
+
+        HashSet<String> stringHashSet=new HashSet<String>();
+        op.addelementsatonce(stringHashSet,"hello","ugyuhgb","jbuinn");
+
+        op.iterate(stringHashSet);
+        }
+}
+
